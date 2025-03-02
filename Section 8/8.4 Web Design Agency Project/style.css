@@ -29,4 +29,10 @@ span{
   float: left;
   margin-right: 50px;
 }
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
 
