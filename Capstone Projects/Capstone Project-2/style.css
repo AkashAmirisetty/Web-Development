@@ -1,0 +1,59 @@
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+.section-2 {
+    background: linear-gradient(45deg, #213555, #d8c4b6, #3e5879);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+.section-4{
+    background: linear-gradient(45deg, #213555, #d8c4b6, #3e5879);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+.section-6{
+    background: linear-gradient(45deg, #213555, #d8c4b6, #3e5879);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+
+}
+.section-2 .container{
+    display: flex;
+    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.text-content{
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+    color: black;
+}
+.mypic{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn{
+    justify-content: center;
+}
+.section-3 p{
+    font-size: small;
+}
+.section-5 li{
+    font-size: small;
+}
+.section-6 p{
+    font-size: small;
+}
+.section-4 li{
+    font-size: small;
+}
+.section-7 p{
+    font-size: small;
+    text-align: center;
+}
