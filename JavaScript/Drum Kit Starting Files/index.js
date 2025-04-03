@@ -7,6 +7,7 @@ for (var i=0; i<numberOfDrumButtons;i++){
         var html=this.innerHTML;
 
         makeSound(html);
+        buttonAnimation(html);
         
         
     });
@@ -14,7 +15,8 @@ for (var i=0; i<numberOfDrumButtons;i++){
 
 // detect keyboard press
 document.addEventListener("keydown", function(event){
-    makeSound(event.key)
+    makeSound(event.key);
+    buttonAnimation(event.key);
 
 })
 
@@ -52,8 +54,26 @@ function makeSound(key){
             break;
         default: console.log(html)
     }
-
 }
+
+function buttonAnimation(currentkey){
+    var activeButton= document.querySelector("."+currentkey)
+    activeButton.classList.add("pressed");
+
+    setTimeout(function(){
+        activeButton.classList.remove("pressed")
+    }, 100);
+}
+
+// function textAnimation(){
+//     var animate=document.querySelector("h4")
+//     setInterval(() => {
+//         animate.style.visibility = (animate.style.visibility === "hidden") ? "visible" : "hidden";
+//     }, 700);
+// }
+// textAnimation();
+
+
 
 
 
